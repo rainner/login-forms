@@ -1,0 +1,31 @@
+
+/** Full reset */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** Document */
+
+html, body {
+  display: block;
+  position: relative;
+  min-height: 100vh;
+}
+
+/** Links */
+
+a {
+  text-decoration: none;
+}

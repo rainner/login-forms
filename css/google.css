@@ -1,0 +1,224 @@
+
+/** Animations */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideLeft {
+    0% { transform: translateX( 100px ); opacity: 0; }
+  100% { transform: translateX( 0 ); opacity: 1; }
+}
+@keyframes slideRight {
+    0% { transform: translateX( -100px ); opacity: 0; }
+  100% { transform: translateX( 0 ); opacity: 1; }
+}
+
+/** Document setup */
+
+body {
+  background-color: #fbfbfb;
+  font-family: 'Varela Round', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: #444;
+}
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** Effects */
+
+.hidden {
+  display: none;
+}
+.fade-in {
+  animation: fadeIn 600ms linear forwards;
+}
+.slide-left {
+  animation: slideLeft 200ms ease-out forwards;
+}
+.slide-right {
+  animation: slideRight 200ms ease-out forwards;
+}
+
+/** Google login form */
+
+.google-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 1em;
+}
+
+/** Form centered container */
+
+.google-container {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+/** Form element container */
+
+.google-form {
+  display: block;
+  overflow: hidden;
+  border: 1px solid Gainsboro;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba( 0, 0, 0, .1 );
+  margin: 0 0 2em 0;
+  padding: 3em;
+}
+
+/** Form input links */
+
+.google-form a {
+  font-weight: bold;
+  text-decoration: none;
+  color: DodgerBlue;
+}
+.google-form a:hover {
+  color: RoyalBlue;
+}
+
+/** Form top heading text */
+
+.google-heading {
+  text-align: center;
+}
+.google-form h1 {
+  font-size: 160%;
+  margin: 0 0 15px 0;
+}
+
+/** Form rows spacing */
+
+.google-form > div + div {
+  padding: 3em 0 0 0;
+}
+
+/** Form logo */
+
+.google-logo > img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/** Form welcome email box */
+
+.google-welcome {
+  text-align: center;
+}
+.google-welcome > div {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: auto;
+  margin: 1em auto 0 auto;
+  padding: .4em .8em;
+  line-height: 1em;
+  border: 1px solid Gainsboro;
+  border-radius: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.google-welcome > div > span {
+  margin: 0 .3em;
+}
+
+/** Form text inputs */
+
+.google-input {
+  position: relative;
+}
+.google-input > input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid Gainsboro;
+  border-radius: 4px;
+  padding: 0 calc( 1em + 5px );
+  line-height: 3.6em;
+  margin: 0 0 1em 0;
+}
+.google-input > input:hover,
+.google-input > input:focus,
+.google-input > input:active {
+  border-color: DodgerBlue;
+  box-shadow: 0 0 0 1px DodgerBlue;
+}
+
+/** Form input placeholder move effect */
+
+.google-input > span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  background-color: white;
+  transform-origin: left center;
+  border-radius: 8px;
+  left: 1em;
+  top: 4.2em;
+  padding: 0 5px;
+  color: gray;
+}
+.google-input > input:focus + span,
+.google-input > input.filled + span {
+  transform: translateY( -2em ) scale( .8 );
+  color: DodgerBlue;
+}
+
+.google-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google-action > button {
+  display: inline-block;
+  text-align: center;
+  background-color: DodgerBlue;
+  padding: 0 2em;
+  line-height: 3em;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+/** Form footer links */
+
+.google-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 90%;
+}
+.google-footer-left {
+  flex: 1;
+}
+.google-footer-right > a {
+  margin-left: 1em;
+  color: grey;
+}
+
