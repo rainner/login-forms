@@ -1,0 +1,217 @@
+/** Document setup */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  background-color: #fff;
+  color: #333;
+}
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+a:active, a:visited, a:hover {
+  text-decoration: underline;
+  color: #0d91e2;
+}
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** Twitter login form */
+
+.twitter-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: calc( 94vh - 2px );
+}
+@media only screen and (min-width: 1080px) {
+  .twitter-wrap {
+    flex-direction: row-reverse;
+  }
+}
+
+/** Form centered container */
+
+.twitter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/** Form element container */
+
+.twitter-form {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 400px;;
+}
+
+/** Form heading */
+
+.twitter-heading {
+  position: relative;
+  margin: 0 0 2rem 0;
+}
+.twitter-heading > img {
+  display: block;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  max-width: 68px;
+  height: auto;
+}
+.twitter-heading > h1 {
+  font-size: 180%;
+  line-height: 1.05em;
+  letter-spacing: -.04em;
+}
+
+/** Form inputs */
+
+.twitter-input {
+  position: relative;
+  margin: 1rem 0 0 0;
+}
+.twitter-input > input {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: .8rem 1.2rem;
+}
+.twitter-input > input:hover,
+.twitter-input > input:active,
+.twitter-input > input:focus {
+  border-color: #1da1f2;
+}
+.twitter-input.has-error > input {
+  color: crimson;
+  border-color: crimson;
+  background-color: #ffeeee;
+}
+.twitter-input > a {
+  display: block;
+  margin: .5em 0 0 0;
+  font-size: 90%;
+}
+
+/** Form action */
+
+.twitter-action {
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+.twitter-action > button {
+  display: inline-block;
+  color: #1da1f2;
+  border: 2px solid #1da1f2;
+  border-radius: 100px;
+  padding: .8rem 1.6rem;
+  font-weight: bold;
+  /* letter-spacing: .1rem; */
+}
+.twitter-action > button:hover,
+.twitter-action > button:active,
+.twitter-action > button:focus {
+  background-color: #eaf5fd;
+}
+
+/** form signup */
+
+.twitter-signup {
+  text-align: center;
+  margin: 2rem 0 0 0;
+  padding: 1rem 0 0 0;
+  border-top: 1px solid #ccc;
+}
+
+/** promo sidebar container */
+
+.twitter-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #1da1f2;
+  background-image: url( '../img/twitter-logo.svg' );
+  background-position: -20% center;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  color: #fff;
+  flex: 1;
+}
+.twitter-promo > img {
+  display: block;
+  position: absolute;
+  height: 140vh;
+  right: -80vh;
+  top: -20vh;
+}
+.twitter-promo > div {
+  position: relative;
+  font-size: 120%;
+  z-index: 2;
+}
+.twitter-promo > div > p {
+  display: flex;
+  align-items: center;
+  margin: 1.8rem 0;
+  line-height: 1em;
+}
+.twitter-promo > div > p > i {
+  display: inline-block;
+  font-size: 160%;
+  width: 1em;
+  margin: 0 1rem 0 0;
+  text-align: center;
+}
+
+/** Footer links */
+
+.twitter-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #eee;
+  min-height: 6vh;
+}
+.twitter-footer > div {
+  padding: 1rem;
+  flex: 1;
+}
+.twitter-footer > div > a,
+.twitter-footer > div > span {
+  display: inline-block;
+  margin: 0 .5rem;
+  font-size: 80%;
+  color: #bbb;
+}
+.twitter-footer > div > a:hover,
+.twitter-footer > div > a:visited,
+.twitter-footer > div > a:active {
+  color: #1da1f2;
+}
+
+
