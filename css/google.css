@@ -33,6 +33,9 @@ button, input, select, options, textarea {
 button, select {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 
 /** Effects */
 
