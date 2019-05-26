@@ -1,5 +1,16 @@
 
-/** Animations */
+/** base font and bg */
+
+body {
+  font-family: 'Varela Round', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5em;
+  background-color: #fbfbfb;
+  color: #444;
+}
+
+/** Effects */
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -13,32 +24,6 @@
     0% { transform: translateX( -100px ); opacity: 0; }
   100% { transform: translateX( 0 ); opacity: 1; }
 }
-
-/** Document setup */
-
-body {
-  background-color: #fbfbfb;
-  font-family: 'Varela Round', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 1.5em;
-  color: #444;
-}
-button, input, select, options, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-button, select {
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-}
-
-/** Effects */
-
 .hidden {
   display: none;
 }
@@ -52,31 +37,27 @@ a {
   animation: slideRight 200ms ease-out forwards;
 }
 
-/** Google login form */
+/** login wrapper */
 
 .google-wrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  padding: 1em;
+  min-height: 100vh;
 }
 
-/** Form centered container */
+/** form centered container */
 
 .google-container {
   display: block;
   width: 100%;
   min-width: 320px;
   max-width: 500px;
+  padding: 1rem;
 }
 
-/** Form element container */
+/** form element container */
 
 .google-form {
   display: block;
@@ -89,7 +70,7 @@ a {
   padding: 3em;
 }
 
-/** Form input links */
+/** form input links */
 
 .google-form a {
   font-weight: bold;
@@ -100,7 +81,7 @@ a {
   color: RoyalBlue;
 }
 
-/** Form top heading text */
+/** form top heading text */
 
 .google-heading {
   text-align: center;
@@ -110,13 +91,13 @@ a {
   margin: 0 0 15px 0;
 }
 
-/** Form rows spacing */
+/** form rows spacing */
 
 .google-form > div + div {
   padding: 3em 0 0 0;
 }
 
-/** Form logo */
+/** form logo */
 
 .google-logo > img {
   display: block;
@@ -124,7 +105,7 @@ a {
   margin: 0 auto;
 }
 
-/** Form welcome email box */
+/** form welcome email box */
 
 .google-welcome {
   text-align: center;
@@ -147,7 +128,7 @@ a {
   margin: 0 .3em;
 }
 
-/** Form text inputs */
+/** form text inputs */
 
 .google-input {
   position: relative;
@@ -169,7 +150,7 @@ a {
   box-shadow: 0 0 0 1px DodgerBlue;
 }
 
-/** Form input placeholder move effect */
+/** form input placeholder move effect */
 
 .google-input > span {
   display: block;
@@ -208,7 +189,7 @@ a {
   letter-spacing: 1px;
 }
 
-/** Form footer links */
+/** form footer links */
 
 .google-footer {
   display: flex;

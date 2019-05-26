@@ -1,4 +1,5 @@
-/** Document setup */
+
+/** base font and bg */
 
 body {
   font-family: 'PT Sans Narrow', 'SF Pro Display', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -7,55 +8,37 @@ body {
   line-height: 1.5em;
   letter-spacing: .1em;
   color: #444;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #70b199;
   background-image:
     linear-gradient( 217deg, rgba(178,34,34,1), rgba(178,34,34,.1) 60% ),
     linear-gradient( 127deg, rgba(8,166,172,1), rgba(25,160,170,.1) 60% ),
     linear-gradient( 336deg, rgba(180,168,68,1), rgba(180,168,68,.1) 100% );
 }
-button, input, select, options, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: inherit;
-}
-button, select {
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-}
 
-/** Apple login form */
+/** login wrapper */
 
 .apple-wrap {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1em;
-}
-@media only screen and (min-width: 480px) {
-  .apple-wrap {
-    align-items: center;
-  }
+  min-height: 100vh;
 }
 
-/** Form centered container */
+/** form centered container */
 
 .apple-container {
   display: block;
   position: relative;
+  padding: 1rem;
   width: 100%;
-  min-width: 320px;
   max-width: 480px;
 }
 
-/** Form element container */
+/** form element container */
 
 .apple-form {
   display: block;
@@ -64,17 +47,17 @@ a {
   margin: 0 0 2em 0;
 }
 
-/** Apple logo */
+/** form logo */
 
 .apple-logo > img {
   display: block;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 2rem auto;
   width: 100%;
   max-width: 120px;
   height: auto;
 }
 
-/** Form heading */
+/** form heading */
 
 .apple-heading {
   margin: 0 0 3rem 0;
@@ -83,17 +66,10 @@ a {
 }
 .apple-heading > h1 {
   font-weight: normal;
-  font-size: 300%;
+  font-size: 280%;
 }
 
-/** Form cnotainer */
-
-/* .apple-form {
-  max-width: 480px;
-  margin: 0 auto;
-} */
-
-/** Form inputs */
+/** form inputs */
 
 .apple-input {
   position: relative;
@@ -104,7 +80,7 @@ a {
   padding: 1rem 2rem;
 }
 
-/** Form input error state */
+/** form input error state */
 
 .apple-input.has-error {
   color: crimson;
@@ -112,7 +88,7 @@ a {
   background-color: #ffeeee;
 }
 
-/** Form input behavior */
+/** form input behavior */
 
 .apple-input > label {
   display: block;
@@ -134,7 +110,6 @@ a {
   margin: 0;
   padding: .8rem 0 0 0;
   line-height: 1.2em;
-  /* letter-spacing: .08em; */
   font-size: 120%;
   font-weight: bold;
 }
@@ -143,7 +118,7 @@ a {
   transform: translateY( -.75rem ) scale( .7 );
 }
 
-/** Form action */
+/** form action */
 
 .apple-action {
   text-align: center;
@@ -157,7 +132,6 @@ a {
   padding: 1rem 2rem;
   font-size: 150%;
   font-weight: bold;
-  /* letter-spacing: .1rem; */
 }
 .apple-action > button:hover,
 .apple-action > button:active,
@@ -165,30 +139,23 @@ a {
   background-color: rgba( 255, 255, 255, .1 );
 }
 
-/** Footer links */
+/** footer links */
 
 .apple-footer {
-  position: absolute;
   text-align: center;
   transition: none;
   font-size: 120%;
-  transform: translateX( -50% );
-  left: 50%;
-  bottom: 0;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 3em 1rem 1rem 1rem;
 }
 .apple-footer a {
   display: inline-block;
-  color: #ccc;
+  color: rgba( 255, 255, 255, .8 );
   font-weight: bold;
 }
 .apple-footer a:hover,
 .apple-footer a:visited,
 .apple-footer a:active {
-  color: #fff;
+  color: rgba( 255, 255, 255, .6 );
 }
 .apple-footer a:before {
   display: inline-block;

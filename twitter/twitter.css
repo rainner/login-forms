@@ -1,4 +1,5 @@
-/** Document setup */
+
+/** base font and bg */
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -8,16 +9,9 @@ body {
   background-color: #fff;
   color: #333;
 }
-button, input, select, options, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: inherit;
-}
-button, select {
-  cursor: pointer;
-}
+
+/** links */
+
 a {
   text-decoration: none;
   color: #1da1f2;
@@ -26,12 +20,8 @@ a:active, a:visited, a:hover {
   text-decoration: underline;
   color: #0d91e2;
 }
-::-webkit-input-placeholder { opacity: .5; }
-::-moz-placeholder { opacity: .5; }
-:-ms-input-placeholder { opacity: .5; }
-:-moz-placeholder { opacity: .5; }
 
-/** Twitter login form */
+/** login wrapper */
 
 .twitter-wrap {
   display: flex;
@@ -46,7 +36,7 @@ a:active, a:visited, a:hover {
   }
 }
 
-/** Form centered container */
+/** form centered container */
 
 .twitter-container {
   display: flex;
@@ -56,7 +46,7 @@ a:active, a:visited, a:hover {
   flex: 1;
 }
 
-/** Form element container */
+/** form element container */
 
 .twitter-form {
   display: block;
@@ -65,7 +55,7 @@ a:active, a:visited, a:hover {
   max-width: 400px;;
 }
 
-/** Form heading */
+/** form heading */
 
 .twitter-heading {
   position: relative;
@@ -84,7 +74,7 @@ a:active, a:visited, a:hover {
   letter-spacing: -.04em;
 }
 
-/** Form inputs */
+/** form inputs */
 
 .twitter-input {
   position: relative;
@@ -114,7 +104,7 @@ a:active, a:visited, a:hover {
   font-size: 90%;
 }
 
-/** Form action */
+/** form action */
 
 .twitter-action {
   text-align: center;
@@ -127,7 +117,6 @@ a:active, a:visited, a:hover {
   border-radius: 100px;
   padding: .8rem 1.6rem;
   font-weight: bold;
-  /* letter-spacing: .1rem; */
 }
 .twitter-action > button:hover,
 .twitter-action > button:active,
@@ -154,7 +143,7 @@ a:active, a:visited, a:hover {
   position: relative;
   overflow: hidden;
   background-color: #1da1f2;
-  background-image: url( '../img/twitter-logo.svg' );
+  background-image: url( './twitter-logo.svg' );
   background-position: -20% center;
   background-repeat: no-repeat;
   background-size: 140%;

