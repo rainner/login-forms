@@ -1,17 +1,20 @@
-[apple]: https://rainner.github.io/login-forms/apple-en.html
-[amazon]: https://rainner.github.io/login-forms/amazon-en.html
-[facebook]: https://rainner.github.io/login-forms/facebook-en.html
-[twitter]: https://rainner.github.io/login-forms/twitter-en.html
-[google]: https://rainner.github.io/login-forms/google-en.html
-[yahoo]: https://rainner.github.io/login-forms/yahoo-en.html
-[ecommerce]: https://rainner.github.io/login-forms/ecommerce-en.html
-[forum]: https://rainner.github.io/login-forms/forum-en.html
+[amazon]: https://rainner.github.io/login-forms/amazon/amazon-en.html
+[apple]: https://rainner.github.io/login-forms/apple/apple-en.html
+[bank]: https://rainner.github.io/login-forms/bank/bank-en.html
+[digisig]: https://rainner.github.io/login-forms/digisig/digisig-en.html
+[ecommerce]: https://rainner.github.io/login-forms/ecommerce/ecommerce-en.html
+[facebook]: https://rainner.github.io/login-forms/facebook/facebook-en.html
+[google]: https://rainner.github.io/login-forms/google/google-en.html
+[instagram]: https://rainner.github.io/login-forms/google/instagram-en.html
+[microsoft]: https://rainner.github.io/login-forms/microsoft/microsoft-en.html
+[netflix]: https://rainner.github.io/login-forms/netflix/netflix-en.html
+[twitter]: https://rainner.github.io/login-forms/twitter/twitter-en.html
+[yahoo]: https://rainner.github.io/login-forms/yahoo/yahoo-en.html
 
 # Login Forms
 
 Login forms from popular sites done with basic HTML/CSS/JS.
 
-##### [Google Login][google]
-##### [Apple Login][apple]
-##### [Twitter Login][twitter]
-
+##### [Apple Login][apple]{target="_blank"}
+##### [Google Login][google]{target="_blank"}
+##### [Twitter Login][twitter]{target="_blank"}
