@@ -1,5 +1,5 @@
 /**
- * Apple login form scripts.
+ * login form scripts.
  */
 (function() {
   const $form = $( '.apple-form' );
