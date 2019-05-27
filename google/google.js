@@ -1,5 +1,5 @@
 /**
- * Google login form scripts.
+ * login form scripts.
  */
 (function() {
   const $form      = $( '.google-form' );
