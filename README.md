@@ -15,7 +15,7 @@
 
 Login forms from popular sites done with basic HTML/CSS/JS.
 
-##### [Amazon Login][amazon]{target="_blank"}
-##### [Apple Login][apple]{target="_blank"}
-##### [Google Login][google]{target="_blank"}
-##### [Twitter Login][twitter]{target="_blank"}
+##### [Amazon Login][amazon]
+##### [Apple Login][apple]
+##### [Google Login][google]
+##### [Twitter Login][twitter]
