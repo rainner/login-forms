@@ -1,0 +1,217 @@
+
+/** base font and bg */
+
+body {
+  font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: #444;
+  background-color: #fbfbfb;
+  background-image: url( './background.jpg' );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #005da6;
+}
+a:active, a:hover {
+  text-decoration: underline;
+  color: #404040;
+}
+
+/** Effects */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideLeft {
+    0% { transform: translateX( 100px ); opacity: 0; }
+  100% { transform: translateX( 0 ); opacity: 1; }
+}
+@keyframes slideRight {
+    0% { transform: translateX( -100px ); opacity: 0; }
+  100% { transform: translateX( 0 ); opacity: 1; }
+}
+.hidden {
+  display: none;
+}
+.fade-in {
+  animation: fadeIn 600ms linear forwards;
+}
+.slide-left {
+  animation: slideLeft 200ms ease-out forwards;
+}
+.slide-right {
+  animation: slideRight 200ms ease-out forwards;
+}
+
+/** login wrapper */
+
+.microsoft-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 96vh;
+}
+
+/** form centered container */
+
+.microsoft-container {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  max-width: 480px;
+  padding: 1rem;
+}
+
+/** form element container */
+
+.microsoft-form {
+  display: block;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba( 0, 0, 0, .1 );
+  margin: 0 0 2em 0;
+  padding: 3em;
+}
+
+/** form top heading text */
+
+.microsoft-heading {
+  text-align: center;
+}
+.microsoft-form h1 {
+  font-size: 160%;
+  margin: 0 0 15px 0;
+}
+
+/** form logo */
+
+.microsoft-logo {
+  padding: 0 0 1rem 0;
+}
+.microsoft-logo > img {
+  display: block;
+  max-width: 256px;
+}
+
+/** form welcome email box */
+
+.microsoft-welcome {
+  display: none;
+}
+.microsoft-welcome.visible {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.microsoft-welcome > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 .5rem 0 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1em;
+  border: 1px solid rgba( 0, 0, 0, .1 );
+  border-radius: 100px;
+}
+.microsoft-welcome > button:hover {
+  background-color: rgba( 0, 0, 0, .1 );
+  border-color: rgba( 0, 0, 0, 0 );
+}
+.microsoft-welcome > button > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/** form slides */
+
+.microsoft-slide,
+.microsoft-slide > div {
+  padding: 1rem 0 0 0;
+}
+.microsoft-slide > h2 {
+  font-size: 180%;
+}
+
+/** form text inputs */
+
+.microsoft-input {
+  position: relative;
+}
+.microsoft-input > input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  padding: .8em 0;
+  line-height: 1.1em;
+}
+.microsoft-input > input.error {
+  border-color: crimson !important;
+}
+.microsoft-input > input:hover,
+.microsoft-input > input:focus,
+.microsoft-input > input:active {
+  border-color: #005da6;
+}
+
+/** remember checkbox */
+
+.microsoft-remember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.microsoft-remember > input[type="checkbox"] {
+  display: inline-block;
+  margin: 0 .5rem 0 0;
+}
+
+/** submit buttons */
+
+.microsoft-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.microsoft-action > button {
+  display: inline-block;
+  text-align: center;
+  padding: 0 2.5em;
+  line-height: 2.5em;
+  background-color: #005da6;
+  color: white;
+}
+
+/** form footer links */
+
+.microsoft-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .4rem 1rem;
+  background-color: rgba( 0, 0, 0, .5 );
+  min-height: 4vh;
+}
+.microsoft-footer span,
+.microsoft-footer a {
+  margin-left: 1em;
+  line-height: 1em;
+  color: #fff;
+}
+
