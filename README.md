@@ -19,3 +19,4 @@ Login forms from popular sites done with basic HTML/CSS/JS.
 ##### [Apple Login][apple]
 ##### [Google Login][google]
 ##### [Twitter Login][twitter]
+##### [Microsoft Login][microsoft]
