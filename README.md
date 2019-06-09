@@ -8,6 +8,7 @@
 [instagram]: https://rainner.github.io/login-forms/google/instagram-en.html
 [microsoft]: https://rainner.github.io/login-forms/microsoft/microsoft-en.html
 [netflix]: https://rainner.github.io/login-forms/netflix/netflix-en.html
+[trinity]: https://rainner.github.io/login-forms/trinity/trinity-en.html
 [twitter]: https://rainner.github.io/login-forms/twitter/twitter-en.html
 [yahoo]: https://rainner.github.io/login-forms/yahoo/yahoo-en.html
 
@@ -18,5 +19,6 @@ Login forms from popular sites done with basic HTML/CSS/JS.
 ##### [Amazon Login][amazon]
 ##### [Apple Login][apple]
 ##### [Google Login][google]
+##### [Trinity College Login][trinity]
 ##### [Twitter Login][twitter]
 ##### [Microsoft Login][microsoft]
