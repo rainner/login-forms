@@ -5,7 +5,7 @@
 [ecommerce]: https://rainner.github.io/login-forms/ecommerce/ecommerce-en.html
 [facebook]: https://rainner.github.io/login-forms/facebook/facebook-en.html
 [google]: https://rainner.github.io/login-forms/google/google-en.html
-[instagram]: https://rainner.github.io/login-forms/google/instagram-en.html
+[instagram]: https://rainner.github.io/login-forms/instagram/instagram-en.html
 [microsoft]: https://rainner.github.io/login-forms/microsoft/microsoft-en.html
 [netflix]: https://rainner.github.io/login-forms/netflix/netflix-en.html
 [trinity]: https://rainner.github.io/login-forms/trinity/trinity-en.html
