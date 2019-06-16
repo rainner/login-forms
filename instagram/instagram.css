@@ -1,0 +1,308 @@
+
+/** base font and bg */
+
+body {
+  font-family: -instagram-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4em;
+  background-color: #f9f9f9;
+  color: #303030;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #385185;
+}
+a:active {
+  opacity: .8;
+}
+
+/** common buttons */
+.btn {
+  display: block;
+  font-weight: normal;
+  cursor: pointer;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  border-radius: 3px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none !important;
+  color: #ffffff;
+  padding: .6em 1em;
+  width: 100%;
+  flex: 1;
+}
+.btn[disabled] {
+  pointer-events: none;
+  opacity: .6;
+}
+.btn:focus,
+.btn:active {
+  opacity: .8;
+}
+
+/** login wrapper */
+
+.instagram-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 2rem 1rem;
+}
+
+/** sidebar slideshow */
+.instagram-slideshow {
+  display: none;
+  position: relative;
+  background-image: url( 'carousel-bg.png' );
+  background-position: 0 0;
+  background-size: 377px 602px;
+  width: 377px;
+  height: 602px;
+  margin: 0 1rem 0 0;
+}
+.instagram-slideshow > img {
+  display: block;
+  position: absolute;
+  transition: opacity 2s ease-in-out;
+  left: 114px;
+  top: 86.5px;
+  width: 240px;
+  height: 427px;
+  opacity: 0;
+}
+.instagram-slideshow > img.active {
+  opacity: 1;
+}
+
+/** form centered container */
+
+.instagram-container {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  max-width: 360px;
+}
+
+/** form logo */
+.instagram-logo {
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+.instagram-logo > img {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+}
+
+/** form element container */
+
+.instagram-form,
+.instagram-signup {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  margin: 0 0 .8rem 0;
+  padding: 1.4rem 2rem;
+}
+
+/** form text inputs */
+
+.instagram-input {
+  position: relative;
+  margin: 0 0 .5rem 0;
+  font-size: 92%;
+}
+.instagram-input > label {
+  display: block;
+  position: absolute;
+  transform-origin: left center;
+  pointer-events: none;
+  left: 1em;
+  right: 1em;
+  top: 1.22em;
+  margin: 0;
+  line-height: 1em;
+  color: #aaa;
+}
+.instagram-input > input {
+  display: block;
+  width: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  padding: 1.5em 1em .5em 1em;
+  line-height: 1.2em;
+}
+.instagram-input > input:hover,
+.instagram-input > input:focus,
+.instagram-input > input:active {
+  border-color: #909090;
+}
+.instagram-input > input:focus + label,
+.instagram-input > input.filled + label {
+  transform: translateY( -.55rem ) scale( .8 );
+}
+
+/** form remember checkbox */
+
+.instagram-remember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  font-size: 90%;
+}
+.instagram-remember > input[type="checkbox"] {
+  display: inline-block;
+  margin: 0 .6rem 0 0;
+}
+
+/** action buttons */
+
+.instagram-action {
+  padding: 1rem 0 0 0;
+}
+.instagram-action > button {
+  font-weight: bold;
+}
+
+/** form signup */
+
+.instagram-options {
+  padding: 1rem 0 0 0;
+  text-align: center;
+}
+.instagram-options-heading {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 .5rem 0;
+}
+.instagram-options-heading:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0,0,0,.085);
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  content: '';
+}
+.instagram-options-heading > span {
+  display: inline-block;
+  position: relative;
+  padding: .1rem 1rem;
+  background-color: #fff;
+  color: #999;
+  z-index: 2;
+}
+
+/** login links */
+
+.instagram-facebook-login {
+  font-weight: bold;
+  margin: 1em 0 0 0;
+}
+.instagram-facebook-login > img {
+  display: inline;
+  margin: 0 .6em 0 0;
+  max-width: 1.2em;
+  vertical-align: top;
+
+}
+.instagram-forgot-login {
+  font-size: 90%;
+  margin: 1em 0 0 0;
+}
+
+/** signup container */
+
+.instagram-signup {
+  text-align: center;
+}
+.instagram-signup a {
+  font-weight: bold;
+  color: #3897f0;
+}
+
+
+/** app links container */
+
+.instagram-apps {
+  text-align: center;
+}
+.instagram-apps > p {
+  display: block;
+  margin: 0 0 .8rem 0;
+}
+.instagram-apps-imgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.instagram-apps-imgs img {
+  margin: 4px;
+  max-height: 40px;
+  width: auto;
+}
+
+
+/** form footer links */
+
+.instagram-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  position: relative;
+  min-height: 10vh;
+  font-weight: bold;
+  font-size: 88%;
+  padding: 0 1rem;
+}
+.instagram-footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.instagram-footer-links > li {
+  margin: 0 .4rem;
+}
+.instagram-footer-copyright {
+  margin: 0 0 1rem 0;
+  color: #909090;
+}
+
+/** mq changes for desktop */
+
+@media only screen and (min-width: 800px) {
+  .instagram-slideshow {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .instagram-footer {
+    flex-direction: row;
+  }
+  .instagram-footer-copyright {
+    padding: 0 0 0 3rem;
+  }
+}
+
