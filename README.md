@@ -19,6 +19,7 @@ Login forms from popular sites done with basic HTML/CSS/JS.
 ##### [Amazon Login][amazon]
 ##### [Apple Login][apple]
 ##### [Google Login][google]
+##### [Instagram Login][instagram]
 ##### [Trinity College Login][trinity]
 ##### [Twitter Login][twitter]
 ##### [Microsoft Login][microsoft]
