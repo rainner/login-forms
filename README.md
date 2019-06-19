@@ -14,7 +14,7 @@
 
 # Login Forms
 
-Login forms from popular sites done with basic HTML/CSS/JS.
+Login forms of popular sites done with basic HTML, CSS, JS (JQuery). Used for educational purposes to teach about the threat of online Phishing sites.
 
 ##### [Amazon Login][amazon]
 ##### [Apple Login][apple]
@@ -23,3 +23,4 @@ Login forms from popular sites done with basic HTML/CSS/JS.
 ##### [Trinity College Login][trinity]
 ##### [Twitter Login][twitter]
 ##### [Microsoft Login][microsoft]
+##### [Netflix Login][netflix]
