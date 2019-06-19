@@ -3,27 +3,31 @@
  */
 (function() {
   const $form = $( '.amazon-form' );
-  if ( !$form.length ) return;
 
-  // ignore form submit until later
+  // get sanitized input values from form
+  const getFormData = ( _form ) => {
+    const username = _form ? String( _form._username.value || '' ).trim() : '';
+    const password = _form ? String( _form._password.value || '' ).trim() : '';
+    return { username, password };
+  };
+
+  // on form submit...
   $form.on( 'submit', function( e ) {
-    e.preventDefault();
-    const _email = String( this._email.value || '' ).trim();
-    const _password = String( this._password.value || '' ).trim();
+    const { username, password } = getFormData( this );
 
-    // check for email
-    if ( !_email ) {
-      this._email.focus();
+    // check for username
+    if ( !username ) {
+      e.preventDefault();
+      this._username.focus();
       return false;
     }
     // check for password
-    if ( !_password ) {
+    if ( !password ) {
+      e.preventDefault();
       this._password.focus();
       return false;
     }
     // form ready to be processed
-    console.log( _email, _password );
-    window.location.assign( this.action || '#' );
     return true;
   });
 

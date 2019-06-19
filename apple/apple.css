@@ -1,6 +1,37 @@
 
-/** base font and bg */
+/** full reset */
 
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** input placeholders */
+
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** document */
+
+html, body {
+  display: block;
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
 body {
   font-family: 'PT Sans Narrow', 'SF Pro Display', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -16,6 +47,29 @@ body {
     linear-gradient( 217deg, rgba(178,34,34,1), rgba(178,34,34,.1) 60% ),
     linear-gradient( 127deg, rgba(8,166,172,1), rgba(25,160,170,.1) 60% ),
     linear-gradient( 336deg, rgba(180,168,68,1), rgba(180,168,68,.1) 100% );
+}
+
+/** controls */
+
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #385185;
+}
+a:active {
+  opacity: .8;
 }
 
 /** login wrapper */

