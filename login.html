@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>You Got Phished!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="You got phished!" />
+
+    <style>
+      html, body { margin: 0; padding: 0; max-width: 100vw; min-height: 100vh; }
+      body { font-family: Arial, Helvetica, sans-serif; color: #30393f; }
+      .container { text-align: center; padding: 4rem 1rem; }
+      .container > figure { margin: 0; padding: 0; font-size: 200%; }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <figure>( ͡° ͜ʖ ͡°)</figure>
+      <h1>You Got Phished!</h1>
+      <p>Be careful when entering information in online forms.</p>
+      <p>
+        <b>Service:</b> <span id="service"></span> &nbsp;|&nbsp;
+        <b>Username:</b> <span id="username"></span> &nbsp;|&nbsp;
+        <b>Password:</b> <span id="password"></span>
+      </p>
+      <p><a href="https://en.wikipedia.org/wiki/Phishing" target="_blank">Learn more about Phishing</a> </p>
+      <p><a onclick="return history.back()" href="#">Go back</a></p>
+    </div>
+
+    <script>
+      const q = new URLSearchParams( document.location.search || '' );
+      document.querySelector( '#service' ).textContent  = q.get( '_service' )  || '';
+      document.querySelector( '#username' ).textContent = q.get( '_username' ) || '';
+      document.querySelector( '#password' ).textContent = q.get( '_password' ) || '';
+    </script>
+
+  </body>
+</html>
