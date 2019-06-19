@@ -1,0 +1,287 @@
+
+/** full reset */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** input placeholders */
+
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** document */
+
+html, body {
+  display: block;
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4em;
+  background-color: #000;
+  color: #999;
+}
+body:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url( 'netflix-bg.jpg' );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: .5;
+  content: '';
+}
+
+/** controls */
+
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/** common buttons */
+.btn {
+  display: block;
+  font-weight: normal;
+  cursor: pointer;
+  background-color: #e50914;
+  border-radius: 4px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none !important;
+  color: #ffffff;
+  padding: 1em;
+  width: 100%;
+  flex: 1;
+}
+
+/** login wrapper */
+
+.netflix-wrap {
+  display: block;
+  position: relative;
+}
+
+/** form header and logo */
+
+.netflix-header {
+  padding: 2rem;
+}
+.netflix-logo {
+  display: block;
+}
+.netflix-logo > img {
+  display: block;
+  width: 180px;
+}
+
+/** form centered container */
+
+.netflix-container {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/** form element container */
+
+.netflix-form {
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.75);
+  margin: 0 0 6rem 0;
+  padding: 4rem;
+}
+
+/** form top heading text */
+
+.netflix-heading {
+  margin: 0 0 3rem 0;
+}
+.netflix-heading > h1 {
+  font-size: 200%;
+  font-weight: bold;
+  color: #fff;
+}
+
+/** form text inputs */
+
+.netflix-input {
+  position: relative;
+  margin: 0 0 1rem 0;
+}
+.netflix-input > label {
+  display: block;
+  position: absolute;
+  transform-origin: left center;
+  pointer-events: none;
+  left: 1em;
+  right: 1em;
+  top: 1.2em;
+  margin: 0;
+  line-height: 1em;
+  color: #999;
+}
+.netflix-input > input {
+  display: block;
+  width: 100%;
+  color: #fff;
+  background-color: #333;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px;
+  padding: 1.5em 1em .5em 1em;
+  line-height: 1.2em;
+}
+.netflix-input > input:focus,
+.netflix-input > input:active {
+  border-color: #e87c03;
+}
+.netflix-input > input:focus + label,
+.netflix-input > input.filled + label {
+  transform: translateY( -.8rem ) scale( .7 );
+}
+
+/** action buttons */
+
+.netflix-action {
+  padding: 1.5rem 0 .5rem 0;
+}
+.netflix-action > button {
+  font-weight: bold;
+}
+
+/** form remember checkbox */
+
+.netflix-remember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 80%;
+}
+.netflix-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.netflix-checkbox > input[type="checkbox"] {
+  display: inline-block;
+  margin: 0 .6rem 0 0;
+}
+
+/** form signup */
+
+.netflix-options {
+  padding: 8rem 0 0 0;
+}
+
+/** login links */
+
+.netflix-facebook-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 1rem 0;
+  font-size: 80%;
+}
+.netflix-facebook-login > img {
+  display: block;
+  margin: 0 .6rem 0 0;
+  max-width: 1.5em;
+}
+.netflix-facebook-login > a {
+  display: block;
+}
+.netflix-forgot-login {
+  font-size: 90%;
+  margin: 1em 0 0 0;
+}
+
+/** signup container */
+
+.netflix-signup a {
+  font-weight: bold;
+  color: #fff;
+}
+
+/** form footer links */
+
+.netflix-footer {
+  display: block;
+  position: relative;
+  color: #888;
+  background-color: rgba(0,0,0,0.75);
+  padding: 2rem;
+}
+.netflix-footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.netflix-footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  padding: 2rem 0 0 0;
+  font-size: 80%;
+}
+.netflix-footer-lang {
+  padding: 2rem 0 0 0;
+}
+.netflix-footer-lang > select {
+  display: inline-block;
+  padding: .8em 1.2em;
+  min-width: 160px;
+  background-color: #000;
+  border: 1px solid #333;
+  font-size: 80%;
+}
+
+
