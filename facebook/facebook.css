@@ -1,0 +1,272 @@
+
+/** full reset */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** input placeholders */
+
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** document */
+
+html, body {
+  display: block;
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.6em;
+  background-color: #fff;
+  color: #1c1e21;
+}
+
+/** controls */
+
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #0066c0;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/** common buttons */
+.btn {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 1em;
+  width: 100%;
+  flex: 1;
+}
+
+/** primary buttons */
+
+.btn-primary {
+  background-color: #4267b2;
+  border-color: #4267b2;
+}
+.btn-primary:active {
+  background-color: #29487d;
+  border-color: #29487d;
+}
+.btn-primary:hover {
+  background-color: #365899;
+  border-color: #365899;
+}
+
+/** secondary buttons */
+
+.btn-secondary {
+  background-color: #42b72a;
+  border-color: #42b72a;
+}
+.btn-secondary:active {
+  background-color: #2b9217;
+  border-color: #2b9217;
+}
+.btn-secondary:hover {
+  background-color: #36a420;
+  border-color: #36a420;
+}
+
+/** common section container */
+
+.facebook-container {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/** page header */
+
+.facebook-header {
+  display: block;
+  background-color: #3b5998;
+  background-image: linear-gradient(#4e69a2, #3b5998 50%);
+}
+.facebook-header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+.facebook-header-logo > a {
+  display: block;
+}
+.facebook-header-logo > a > img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+/** login form area */
+
+.facebook-main {
+  background-color: #e9ebee;
+  padding: 5rem 1rem;
+}
+.facebook-wrapper {
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  max-width: 600px;
+}
+
+/** login form */
+
+.facebook-form {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/** form heading */
+
+.facebook-heading {
+  margin: 0 0 2rem 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+/** form row spacing */
+
+.facebook-input,
+.facebook-action,
+.facebook-forgot,
+.facebook-signup {
+  margin: 1rem 0 0 0;
+}
+
+/** form text inputs */
+
+.facebook-input {
+  position: relative;
+}
+.facebook-input > input {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+  padding: 1em;
+  line-height: 1.2em;
+}
+.facebook-input > input:hover {
+  border-color: #c0c0c0;
+}
+.facebook-input > input:focus,
+.facebook-input > input:active {
+  box-shadow: 0 0 3px 2px rgba(66, 103, 178, .2);
+}
+
+/** forgot pass link */
+
+.facebook-forgot {
+  text-align: center;
+}
+
+/** form signup */
+
+.facebook-signup-heading {
+  position: relative;
+  text-align: center;
+  margin: 0 0 .5rem 0;
+}
+.facebook-signup-heading:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0,0,0,.1);
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  content: '';
+}
+.facebook-signup-heading > span {
+  display: inline-block;
+  position: relative;
+  padding: .1rem 1rem;
+  background-color: #fff;
+  z-index: 2;
+}
+
+/** form footer links */
+
+.facebook-footer {
+  display: block;
+  padding: 2rem 0;
+}
+.facebook-footer hr {
+  display: block;
+  margin: .5rem 0;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.facebook-footer-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.facebook-footer-list > li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 .8em 0 0;
+}
+
+.facebook-footer-copyright {
+  padding: 1rem 0 0 0;
+  color: grey;
+}
+
+
