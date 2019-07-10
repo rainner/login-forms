@@ -1,0 +1,236 @@
+
+/** full reset */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** input placeholders */
+
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** document */
+
+html, body {
+  display: block;
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+body {
+  font-family: "Segoe UI Webfont","Helvetica Neue","Lucida Grande","Roboto","Segoe Xbox Symbol","Segoe UI Symbol", -apple-system, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  background-color: #fff;
+  background-image: url('bank-bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+}
+
+/** controls */
+
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #0a599e;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  opacity: .8;
+}
+
+/** login wrapper */
+
+.bank-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  min-height: 94vh;
+}
+
+/** form centered container */
+
+.bank-container {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 4rem 2rem;
+  max-width: 680px;
+  background-color: rgba( 255, 255, 255, .9 );
+  box-shadow: 0 2px 20px rgba( 0, 0, 0, .05 );
+  width: 100%;
+}
+@media only screen and (min-width: 680px) {
+  .bank-container  {
+    padding: 4rem 8rem;
+  }
+}
+
+/** form element container */
+
+.bank-form {
+  display: block;
+}
+
+/** form logo */
+
+.bank-logo  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+.bank-logo > img {
+  display: block;
+  margin: 0 1rem 0 0;
+  width: auto;
+  height: 74px;
+}
+.bank-logo > h1 {
+  font-size: 200%;
+  font-weight: normal;
+}
+
+/** form inputs */
+
+.bank-input {
+  position: relative;
+  margin: 1rem 0 0 0;
+}
+
+/** form input behavior */
+
+.bank-input > input {
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  margin: 0;
+  padding: 1.8rem 1.5rem .8rem 1.5rem;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.bank-input > input:hover {
+  border-color: #c0c0c0;
+}
+.bank-input > input:focus,
+.bank-input > input.active {
+  border-color: #3f758b;
+  box-shadow: 0 0 3px 2px rgba( 0, 0, 0, .05 );
+}
+
+.bank-input > label {
+  display: block;
+  position: absolute;
+  transform-origin: left center;
+  pointer-events: none;
+  left: 1.5rem;
+  right: 2rem;
+  top: 1.5rem;
+  margin: 0;
+  line-height: 1em;
+  font-weight: bold;
+  color: #b0b0b0;
+}
+.bank-input > input:focus + label,
+.bank-input > input.filled + label {
+  transform: translateY( -.8rem ) scale( .8 );
+}
+
+/** forgot password link */
+
+.facebook-forgot {
+  margin: .5rem 0 0 0;
+  text-align: right;
+}
+
+/** form action */
+
+.bank-action {
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+.bank-action > button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #3f758b;
+  background-image: linear-gradient( to top, #3a5e77 0%, transparent 100% );
+  border: 1px solid #a68226;
+  padding: 1rem 4rem;
+  font-size: 120%;
+}
+.bank-action > button:hover,
+.bank-action > button:active,
+.bank-action > button:focus {
+  background-color: #3a5e77;
+}
+
+/** sign up link */
+
+.bank-signup {
+  text-align: center;
+  border-top: 1px solid rgba( 0, 0, 0, .05 );
+  margin: 2rem 0 0 0;
+  padding: 2rem 0 0 0;
+}
+
+/** footer links */
+
+.bank-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: normal;
+  border-top: 1px solid rgba( 0, 0, 0, .1 );
+  background-color: #f7f7f7;
+  min-height: 6vh;
+}
+.bank-footer-container {
+  padding: .8rem 2rem;
+}
+.bank-footer-container > a {
+  display: inline-block;
+  margin: 0 .8em;
+}
+
+
+
+
+
