@@ -1,0 +1,218 @@
+
+/** full reset */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** input placeholders */
+
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** document */
+
+html, body {
+  display: block;
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  background-color: #fff;
+  color: #333;
+}
+
+/** controls */
+
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #6f31de;
+}
+a:active, a:visited, a:hover {
+  text-decoration: underline;
+}
+
+/** login wrapper */
+
+.ecommerce-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: 100vh;
+}
+@media only screen and (min-width: 1080px) {
+  .ecommerce-wrap {
+    flex-direction: row-reverse;
+  }
+}
+
+/** form centered container */
+
+.ecommerce-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/** form signup */
+
+.ecommerce-signup {
+  border-bottom: 1px solid rgba( 0, 0, 0, .08 );
+  text-align: right;
+  margin: 0 2rem;
+  padding: 1rem 0;
+}
+.ecommerce-signup a {
+  color: #00dd66;
+}
+
+/** form element container */
+
+.ecommerce-form {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 520px;
+}
+
+/** form heading */
+
+.ecommerce-heading {
+  position: relative;
+  margin: 0 0 4rem 0;
+}
+.ecommerce-heading > h1 {
+  font-size: 180%;
+  line-height: 1.05em;
+  letter-spacing: -.04em;
+}
+.ecommerce-heading > h1 > span {
+  color: #6f31de;
+}
+
+/** form inputs */
+
+.ecommerce-input {
+  position: relative;
+  margin: 1rem 0 0 0;
+}
+.ecommerce-input > label {
+  display: block;
+  line-height: 1.2em;
+  margin: 0 0 .2em 0;
+  opacity: .9;
+}
+.ecommerce-input > input {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: .8rem 1.2rem;
+}
+.ecommerce-input > input:hover,
+.ecommerce-input > input:active,
+.ecommerce-input > input:focus {
+  border-color: #6f31de;
+}
+.ecommerce-input.has-error > input {
+  color: crimson;
+  border-color: crimson;
+  background-color: #ffeeee;
+}
+.ecommerce-input > a {
+  display: block;
+  margin: .5em 0 0 0;
+  font-size: 90%;
+}
+
+/** form action */
+
+.ecommerce-action {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+.ecommerce-action > button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #5daae0;
+  background-image: linear-gradient( to right, #6f31de 0%, transparent 100% );
+  border-radius: 100px;
+  padding: .8rem 2rem;
+  font-weight: bold;
+}
+.ecommerce-action > button:hover,
+.ecommerce-action > button:active,
+.ecommerce-action > button:focus {
+  background-color: #6f31de;
+}
+
+/** promo sidebar container */
+
+.ecommerce-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #5daae0;
+  background-image: url( 'ecommerce-bg.jpg' );
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  flex: 1;
+}
+
+/** bottom links */
+
+.ecommerce-links {
+  border-top: 1px solid rgba( 0, 0, 0, .08 );
+  font-size: 80%;
+  text-align: center;
+  margin: 0 2rem;
+  padding: 1rem 0;
+}
+.ecommerce-links a {
+  display: inline-block;
+  margin: 0 1em;
+  color: #999;
+}
+
+

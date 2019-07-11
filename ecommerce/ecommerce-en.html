@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Login with your account</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Login with your account." />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <link href="ecommerce.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <section class="ecommerce-wrap">
+
+      <!-- form center container -->
+      <main class="ecommerce-container">
+
+        <!-- form sign up -->
+        <div class="ecommerce-signup">
+          <span>Join today</span>
+          <span>&nbsp;|&nbsp;</span>
+          <a href="#">Sign up</a>
+        </div>
+
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="ecommerce-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="eCommerce" />
+
+          <!-- default heading -->
+          <div class="ecommerce-heading">
+            <h1>Login for <span>faster checkout</span></h1>
+          </div>
+
+          <!-- username input -->
+          <div class="ecommerce-input ecommerce-username">
+            <label for="_username">User ID or Email</label>
+            <input type="text" id="_username" name="_username" value="" />
+          </div>
+
+          <!-- hidden password input -->
+          <div class="ecommerce-input ecommerce-password">
+            <label for="_password">Password</label>
+            <input type="password" id="_password" name="_password" value="" />
+            <a href="#"><b>Forgot password?</b></a>
+          </div>
+
+          <!-- form action button -->
+          <div class="ecommerce-action">
+            <button type="submit">Log in</button>
+          </div>
+
+        </form>
+
+        <!-- bottom links -->
+        <div class="ecommerce-links">
+           <a href="#">About</a>
+           <a href="#">Support</a>
+           <a href="#">Blog</a>
+           <a href="#">Terms</a>
+           <a href="#">Privacy Policy</a>
+           <a href="#">Cookies</a>
+           <a href="#">Settings</a>
+        </div>
+
+      </main>
+
+      <!-- side container -->
+      <aside class="ecommerce-promo">
+        <div>
+          <p>&nbsp;</p>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="ecommerce.js"></script>
+
+  </body>
+</html>
