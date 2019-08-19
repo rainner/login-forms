@@ -186,7 +186,7 @@ a:active, a:visited, a:hover {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-color: RoyalBlue;
+  background-color: #30393f;
   background-image: url( 'daa-bg.png' );
   background-position: right center;
   background-repeat: no-repeat;
@@ -200,7 +200,6 @@ a:active, a:visited, a:hover {
 .daa-links {
   border-top: 1px solid rgba( 0, 0, 0, .08 );
   font-size: 80%;
-  /* text-align: center; */
   margin: 0 4rem;
   padding: 1rem 0;
 }
