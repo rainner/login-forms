@@ -186,7 +186,7 @@ a:active, a:visited, a:hover {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-color: #30393f;
+  background-color: RoyalBlue;
   background-image: url( 'daa-bg.png' );
   background-position: right center;
   background-repeat: no-repeat;
