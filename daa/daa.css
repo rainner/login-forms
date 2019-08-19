@@ -1,0 +1,213 @@
+
+/** full reset */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** input placeholders */
+
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** document */
+
+html, body {
+  display: block;
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+body {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  background-color: #fff;
+  color: #333;
+}
+
+/** controls */
+
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: RoyalBlue;
+}
+a:active, a:visited, a:hover {
+  text-decoration: underline;
+}
+
+/** login wrapper */
+
+.daa-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: 100vh;
+}
+@media only screen and (min-width: 1080px) {
+  .daa-wrap {
+    flex-direction: row-reverse;
+  }
+}
+
+/** form centered container */
+
+.daa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/** form element container */
+
+.daa-logo {
+  padding: 3rem;
+}
+.daa-logo > img {
+  display: block;
+  max-width: 300px;
+  height: auto;
+}
+
+/** form element container */
+
+.daa-form {
+  display: block;
+  /* margin: 0 auto; */
+  padding: 0 4rem 4rem 4rem;
+  max-width: 600px;
+}
+
+/** form heading */
+
+.daa-heading {
+  position: relative;
+  margin: 0 0 2rem 0;
+}
+.daa-heading > h1 {
+  font-size: 180%;
+  line-height: 1.05em;
+  letter-spacing: -.04em;
+}
+.daa-heading > h1 > span {
+  color: RoyalBlue;
+}
+
+/** form inputs */
+
+.daa-input {
+  position: relative;
+  margin: 1rem 0 0 0;
+}
+.daa-input > label {
+  display: block;
+  line-height: 1.2em;
+  margin: 0 0 .2em 0;
+  opacity: .9;
+}
+.daa-input > input {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: .5rem 1.2rem;
+}
+.daa-input > input:hover,
+.daa-input > input:active,
+.daa-input > input:focus {
+  border-color: RoyalBlue;
+}
+.daa-input.has-error > input {
+  color: crimson;
+  border-color: crimson;
+  background-color: #ffeeee;
+}
+.daa-input > a {
+  display: block;
+  margin: .5em 0 0 0;
+  font-size: 90%;
+}
+
+/** form action */
+
+.daa-action {
+  padding: 2rem 0 0 0;
+}
+.daa-action > button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: RoyalBlue;
+  padding: .5rem 2rem;
+  font-weight: bold;
+}
+.daa-action > button:hover,
+.daa-action > button:active,
+.daa-action > button:focus {
+  background-color: MidnightBlue;
+}
+
+/** promo sidebar container */
+
+.daa-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: RoyalBlue;
+  background-image: url( 'daa-bg.png' );
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  flex: 1;
+}
+
+/** bottom links */
+
+.daa-links {
+  border-top: 1px solid rgba( 0, 0, 0, .08 );
+  font-size: 80%;
+  /* text-align: center; */
+  margin: 0 4rem;
+  padding: 1rem 0;
+}
+.daa-links a {
+  display: inline-block;
+  margin: 0 1em;
+  color: #999;
+}
+
+

