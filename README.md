@@ -2,6 +2,7 @@
 [apple]: https://rainner.github.io/login-forms/apple/apple-en.html
 [bank]: https://rainner.github.io/login-forms/bank/bank-en.html
 [daa]: https://rainner.github.io/login-forms/daa/daa-en.html
+[dhl]: https://rainner.github.io/login-forms/dhl/dhl-en.html
 [digisig]: https://rainner.github.io/login-forms/digisig/digisig-en.html
 [ecommerce]: https://rainner.github.io/login-forms/ecommerce/ecommerce-en.html
 [facebook]: https://rainner.github.io/login-forms/facebook/facebook-en.html
@@ -21,6 +22,7 @@ Login forms of popular sites done with basic HTML, CSS, JS (JQuery). Used for ed
 ##### [Apple Login][apple]
 ##### [Bank Login][bank]
 ##### [DAA Login][daa]
+##### [DHL Login][dhl]
 ##### [DigiSig Login][digisig]
 ##### [eCommerce Login][ecommerce]
 ##### [Facebook Login][facebook]
