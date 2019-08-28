@@ -1,0 +1,248 @@
+
+/** full reset */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+
+/** input placeholders */
+
+::-webkit-input-placeholder { opacity: .5; }
+::-moz-placeholder { opacity: .5; }
+:-ms-input-placeholder { opacity: .5; }
+:-moz-placeholder { opacity: .5; }
+
+/** document */
+
+html, body {
+  display: block;
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.6em;
+  background-color: #fdce06;
+  background-image: url( "dhl-bg.jpg" );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #1c1e21;
+}
+
+/** controls */
+
+button, input, select, options, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+button, select {
+  cursor: pointer;
+}
+
+/** links */
+
+a {
+  text-decoration: none;
+  color: #1c1e21;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/** required red marks */
+
+span.required {
+  color: #d52027;
+}
+
+.test {
+  background-color: rgba( 255, 0, 0, .2 );
+}
+
+/** common buttons */
+.btn {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 1em;
+  width: 100%;
+  flex: 1;
+}
+
+/** primary buttons */
+
+.btn-primary {
+  background-color: #d52027;
+  border-color: #d52027;
+}
+.btn-primary:active {
+  background-color: #d52027;
+  border-color: #d52027;
+}
+.btn-primary:hover {
+  background-color: #b81e24;
+  border-color: #b81e24;
+}
+
+/** common section container */
+
+.dhl-container {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/** page header */
+
+.dhl-header {
+  display: block;
+  text-align: center;
+}
+.dhl-header-content {
+  display: block;
+  padding: 2rem 0;
+}
+.dhl-header-content > h1 {
+  display: block;
+  margin: 0 0 2rem 0;
+  font-weight: bolder;
+  line-height: 1em;
+  color: #d52027;
+}
+.dhl-header-content > img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+}
+
+/** login form area */
+
+.dhl-main {
+  padding: 5rem 1rem;
+}
+.dhl-wrapper {
+  background-color: #fff;
+  border: 2px solid #d52027;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+
+/** form heading */
+
+.dhl-heading {
+  margin: 0;
+  padding: 1rem;
+  font-weight: normal;
+  text-align: center;
+  background-color: #d52027;
+  color: #fff;
+}
+
+/** login form */
+
+.dhl-form {
+  display: block;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/** form heading */
+
+.dhl-form-heading {
+  font-size: 120%;
+  font-weight: bolder;
+  margin: 0 0 2rem 0;
+}
+
+/** form row spacing */
+
+.dhl-input,
+.dhl-action,
+.dhl-forgot {
+  margin: 1rem 0 0 0;
+}
+
+/** form text inputs */
+
+.dhl-input {
+  position: relative;
+}
+.dhl-input > label,
+.dhl-input > label * {
+  font-size: 120%;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+.dhl-input > input {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #9f9f9f;
+  border-radius: 3px;
+  margin: .5rem 0 0 0;
+  padding: 1em;
+  line-height: 1.2em;
+}
+.dhl-input > input:hover {
+  border-color: #d52027;
+}
+.dhl-input > input:focus,
+.dhl-input > input:active {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, .1);
+}
+
+/** forgot pass link */
+
+.dhl-forgot {
+  text-align: right;
+}
+
+/** form footer links */
+
+.dhl-footer {
+  display: block;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.dhl-footer-copyright {
+  font-size: 120%;
+  font-weight: bold;
+  opacity: .8;
+}
+
+

