@@ -127,16 +127,6 @@ a:active, a:hover {
   padding: 3em;
 }
 
-/** form top heading text */
-
-.microsoft-heading {
-  text-align: center;
-}
-.microsoft-form h1 {
-  font-size: 160%;
-  margin: 0 0 15px 0;
-}
-
 /** form logo */
 
 .microsoft-logo {
@@ -147,52 +137,18 @@ a:active, a:hover {
   max-width: 256px;
 }
 
-/** form welcome username box */
+/** form top heading text */
 
-.microsoft-welcome {
-  display: none;
-}
-.microsoft-welcome.visible {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.microsoft-welcome > button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0 .5rem 0 0;
-  width: 1.5rem;
-  height: 1.5rem;
-  line-height: 1em;
-  border: 1px solid rgba( 0, 0, 0, .1 );
-  border-radius: 100px;
-}
-.microsoft-welcome > button:hover {
-  background-color: rgba( 0, 0, 0, .1 );
-  border-color: rgba( 0, 0, 0, 0 );
-}
-.microsoft-welcome > button > img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/** form slides */
-
-.microsoft-slide,
-.microsoft-slide > div {
-  padding: 1rem 0 0 0;
-}
-.microsoft-slide > h2 {
-  font-size: 180%;
+.microsoft-heading {
+  font-size: 160%;
+  margin: 1rem 0;
 }
 
 /** form text inputs */
 
 .microsoft-input {
   position: relative;
+  margin: 0 0 1rem 0;
 }
 .microsoft-input > input {
   display: block;
@@ -211,26 +167,20 @@ a:active, a:hover {
 .microsoft-input > input:active {
   border-color: #005da6;
 }
-
-/** remember checkbox */
-
-.microsoft-remember {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.microsoft-remember > input[type="checkbox"] {
-  display: inline-block;
-  margin: 0 .5rem 0 0;
+.microsoft-input > a {
+  display: block;
+  margin: .5rem 0 0 0;
+  font-size: 90%;
 }
 
 /** submit buttons */
 
-.microsoft-action {
+.microsoft-bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 .microsoft-action > button {
   display: inline-block;

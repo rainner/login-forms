@@ -2,10 +2,7 @@
  * login form scripts.
  */
 (function() {
-  const $form      = $( '.microsoft-form' );
-  const $welcome   = $( '.microsoft-welcome', $form );
-  const $username  = $( '.microsoft-username', $form );
-  const $password  = $( '.microsoft-password', $form );
+  const $form = $( '.microsoft-form' );
 
   // get sanitized input values from form
   const getFormData = ( _form ) => {
@@ -14,32 +11,9 @@
     return { username, password };
   };
 
-  // switch form state when username is present
-  const switchState = function( _username ) {
-    if ( _username ) {
-      $( 'span', $welcome ).text( _username );
-      $welcome.addClass( 'visible' );
-      $username.addClass( 'hidden' );
-      $password.removeClass( 'hidden' );
-    } else {
-      $form.trigger( 'reset' );
-      $( 'input', $form ).trigger( 'blur' );
-      $( 'span', $welcome ).empty();
-      $welcome.removeClass( 'visible' );
-      $username.removeClass( 'hidden' );
-      $password.addClass( 'hidden' );
-    }
-  }
-
-  // reset form when selected username is clicked
-  $( 'button', $welcome ).on( 'click', function() {
-    switchState();
-  });
-
   // on form submit...
   $form.on( 'submit', function( e ) {
     const { username, password } = getFormData( this );
-    switchState( username );
 
     // check for username
     if ( !username ) {
@@ -56,8 +30,5 @@
     // form ready to be processed
     return true;
   });
-
-  // reset inputs
-  switchState();
 
 })();
